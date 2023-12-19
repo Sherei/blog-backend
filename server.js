@@ -1,6 +1,5 @@
 const myExpress = require("express");
 
-const microCors = require('micro-cors');
 const cors = require("cors");
 
 require("dotenv").config();
