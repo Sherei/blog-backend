@@ -1,8 +1,7 @@
 const myExpress = require("express");
 
 const microCors = require('micro-cors');
-// const cors = require("cors");
-const cors = microCors();
+const cors = require("cors");
 
 require("dotenv").config();
 
@@ -14,7 +13,6 @@ app.use(cors());
 app.use(myExpress.json());
 
 const port = process.env.PORT || 3020;
-
 
 app.listen(port, function () {
   console.log(`Server is running on port ${port}`);
