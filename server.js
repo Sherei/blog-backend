@@ -15,13 +15,10 @@ app.use(myExpress.json());
 
 const port = process.env.PORT || 3020;
 
-createServer(cors(app)).listen(port, () => {
+
+app.listen(port, function () {
   console.log(`Server is running on port ${port}`);
 });
-
-// app.listen(port, function () {
-//   console.log(`Server is running on port ${port}`);
-// });
 
 require("./model/db");
 
